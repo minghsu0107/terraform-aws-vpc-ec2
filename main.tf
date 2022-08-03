@@ -27,6 +27,7 @@ module "vpc" {
 module "ec2_instances" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "3.5.0"
+  # defines two EC2 instances
   count   = 2
 
   name = "my-ec2-cluster"
